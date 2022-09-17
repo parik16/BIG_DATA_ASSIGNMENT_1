@@ -1,0 +1,514 @@
+hive> select SALES,CITY from sales_order_data_orc where QTR_ID IN ('1','2','3')  ORDER BY CITY ; 
+
+7023.98	Paris
+2591.96	Paris
+2752.6	Pasadena
+1645.65	Pasadena
+2758.7	Pasadena
+4196.07	Pasadena
+1109.8	Pasadena
+4119.4	Pasadena
+3501.6	Pasadena
+8884.8	Pasadena
+2559.6	Pasadena
+5192.95	Pasadena
+3098.7	Pasadena
+856.52	Pasadena
+1267.77	Pasadena
+3091.68	Pasadena
+3751.0	Pasadena
+5018.4	Pasadena
+5176.38	Pasadena
+3902.41	Pasadena
+1490.1	Pasadena
+4808.38	Pasadena
+3251.34	Pasadena
+1463.0	Pasadena
+8339.8	Pasadena
+2797.41	Pasadena
+3746.7	Pasadena
+2696.96	Pasadena
+4703.81	Pasadena
+3033.28	Pasadena
+834.67	Pasadena
+2852.08	Philadelphia
+8257.0	Philadelphia
+930.9	Philadelphia
+1281.56	Philadelphia
+4379.18	Philadelphia
+4432.7	Philadelphia
+3157.44	Philadelphia
+3153.6	Philadelphia
+6241.6	Philadelphia
+4165.61	Reggio Emilia
+1352.4	Reggio Emilia
+2932.08	Reggio Emilia
+1351.08	Reggio Emilia
+5035.14	Reggio Emilia
+3581.76	Reggio Emilia
+4812.55	Reggio Emilia
+4764.6	Reggio Emilia
+2824.8	Reggio Emilia
+1482.6	Reggio Emilia
+2457.18	Reggio Emilia
+6203.4	Reggio Emilia
+1591.72	Reggio Emilia
+2464.77	Reggio Emilia
+4352.16	Reggio Emilia
+5196.6	Reggio Emilia
+2674.17	Reggio Emilia
+1921.41	Reggio Emilia
+2526.51	Reggio Emilia
+4468.4	Reggio Emilia
+2681.35	Reggio Emilia
+2454.54	Reggio Emilia
+5642.83	Reggio Emilia
+2100.82	Reggio Emilia
+9160.36	Reggio Emilia
+1373.6	Reggio Emilia
+2620.8	Reggio Emilia
+2803.2	Reggio Emilia
+2935.15	Reggio Emilia
+2168.5	Reims
+2460.16	Reims
+3293.4	Reims
+2765.9	Reims
+1367.48	Reims
+4215.09	Reims
+4346.76	Reims
+1483.02	Reims
+3910.32	Reims
+8284.0	Reims
+3521.25	Reims
+1908.72	Reims
+2613.92	Reims
+2797.84	Reims
+1796.34	Reims
+1611.4	Reims
+1902.4	Reims
+2810.83	Reims
+2023.28	Reims
+4380.2	Reims
+5124.3	Reims
+5552.16	Reims
+2436.78	Reims
+4811.85	Reims
+3144.96	Reims
+4121.43	Reims
+1295.06	Reims
+3169.95	Salzburg
+2499.26	Salzburg
+1459.6	Salzburg
+3832.64	Salzburg
+1539.72	Salzburg
+2687.04	Salzburg
+5589.14	Salzburg
+4594.76	Salzburg
+5926.9	Salzburg
+4674.72	Salzburg
+1092.2	Salzburg
+3065.78	Salzburg
+2896.3	Salzburg
+1916.75	Salzburg
+7695.6	Salzburg
+6916.12	Salzburg
+5202.94	Salzburg
+3066.7	Salzburg
+640.05	Salzburg
+2018.56	Salzburg
+2443.6	Salzburg
+1348.76	Salzburg
+1878.66	Salzburg
+5004.8	Salzburg
+2730.06	Salzburg
+4464.24	Salzburg
+9240.0	Salzburg
+1968.12	Salzburg
+3273.27	Salzburg
+1961.28	Salzburg
+2955.54	San Diego
+7343.9	San Diego
+3231.36	San Diego
+4636.38	San Diego
+3183.29	San Diego
+1265.46	San Diego
+6954.08	San Diego
+2659.54	San Diego
+2914.2	San Diego
+2718.72	San Diego
+1942.77	San Diego
+4420.32	San Diego
+3246.75	San Diego
+2280.24	San Diego
+1416.39	San Diego
+3858.75	San Diego
+3025.05	San Diego
+5997.6	San Diego
+3328.07	San Diego
+4187.22	San Diego
+3892.08	San Diego
+2608.96	San Diego
+3703.46	San Diego
+4161.38	San Diego
+1557.72	San Diego
+2354.88	San Francisco
+1701.7	San Francisco
+8254.8	San Francisco
+2253.68	San Francisco
+6397.44	San Francisco
+4208.41	San Francisco
+4319.76	San Francisco
+1801.24	San Francisco
+1320.75	San Francisco
+4288.2	San Francisco
+4846.7	San Francisco
+2723.2	San Francisco
+2255.12	San Francisco
+4704.0	San Francisco
+4818.15	San Francisco
+3288.78	San Francisco
+6231.54	San Francisco
+4178.85	San Francisco
+2952.0	San Francisco
+1057.29	San Jose
+4421.34	San Jose
+5820.35	San Jose
+3909.15	San Jose
+541.14	San Jose
+4407.0	San Jose
+3628.94	San Jose
+6433.82	San Jose
+2747.53	San Jose
+7048.14	San Jose
+2245.2	San Jose
+2803.2	San Jose
+3051.3	San Jose
+1987.18	San Jose
+1479.84	San Jose
+2956.8	San Jose
+2363.22	San Jose
+9661.44	San Jose
+2668.68	San Jose
+3282.28	San Jose
+3061.0	San Jose
+6055.72	San Jose
+3138.34	San Jose
+7307.42	San Jose
+14082.8	San Jose
+2321.54	San Jose
+3729.39	San Jose
+6386.16	San Jose
+1122.4	San Jose
+2760.94	San Jose
+7182.0	San Jose
+1869.48	San Jose
+3064.32	San Jose
+2632.28	San Jose
+8160.3	San Jose
+2831.54	San Jose
+3002.4	San Jose
+2576.0	San Jose
+4038.8	San Jose
+2173.6	San Jose
+3238.63	San Rafael
+3068.69	San Rafael
+2191.2	San Rafael
+1667.4	San Rafael
+1463.7	San Rafael
+1732.0	San Rafael
+1575.96	San Rafael
+2694.0	San Rafael
+4301.34	San Rafael
+2986.5	San Rafael
+2147.4	San Rafael
+3806.88	San Rafael
+3131.94	San Rafael
+3245.58	San Rafael
+2030.86	San Rafael
+2204.1	San Rafael
+5433.75	San Rafael
+1329.4	San Rafael
+1666.7	San Rafael
+1244.53	San Rafael
+1785.51	San Rafael
+1826.96	San Rafael
+1327.59	San Rafael
+3375.72	San Rafael
+3345.26	San Rafael
+4310.72	San Rafael
+2714.4	San Rafael
+6034.33	San Rafael
+2708.42	San Rafael
+4044.04	San Rafael
+6695.53	San Rafael
+5273.73	San Rafael
+2091.18	San Rafael
+4916.66	San Rafael
+4172.52	San Rafael
+2470.86	San Rafael
+3928.6	San Rafael
+2793.0	San Rafael
+2838.81	San Rafael
+2130.56	San Rafael
+1749.79	San Rafael
+2151.82	San Rafael
+3012.27	San Rafael
+4521.96	San Rafael
+4224.0	San Rafael
+2472.6	San Rafael
+4174.92	San Rafael
+2154.0	San Rafael
+3510.0	San Rafael
+2008.13	San Rafael
+5491.6	San Rafael
+3491.18	San Rafael
+1800.24	San Rafael
+2624.0	San Rafael
+6109.29	San Rafael
+3241.9	San Rafael
+3778.8	San Rafael
+8935.5	San Rafael
+9470.94	San Rafael
+5432.7	San Rafael
+4592.61	San Rafael
+1933.5	San Rafael
+2600.13	San Rafael
+9169.0	San Rafael
+6031.68	San Rafael
+7397.0	San Rafael
+4071.85	San Rafael
+4364.82	San Rafael
+1408.96	San Rafael
+4797.39	San Rafael
+4985.64	San Rafael
+2266.2	San Rafael
+3070.54	San Rafael
+1717.64	San Rafael
+5079.96	San Rafael
+3791.52	San Rafael
+4674.8	San Rafael
+3451.0	San Rafael
+3612.43	San Rafael
+3415.44	San Rafael
+3823.64	San Rafael
+3560.64	San Rafael
+7071.27	San Rafael
+3724.23	San Rafael
+1864.56	San Rafael
+8023.29	San Rafael
+1685.28	San Rafael
+6426.5	San Rafael
+4739.4	San Rafael
+4223.13	San Rafael
+4716.23	San Rafael
+5545.8	San Rafael
+6763.05	San Rafael
+1585.36	San Rafael
+8008.56	San Rafael
+1085.04	San Rafael
+4890.6	San Rafael
+2490.5	San Rafael
+6336.07	San Rafael
+717.4	San Rafael
+1569.75	San Rafael
+4107.2	San Rafael
+7827.3	San Rafael
+4705.18	San Rafael
+3351.09	San Rafael
+3164.98	San Rafael
+2430.64	San Rafael
+2279.55	San Rafael
+6862.94	San Rafael
+4894.73	San Rafael
+4814.25	San Rafael
+1787.56	San Rafael
+2654.4	San Rafael
+3449.4	San Rafael
+5605.05	San Rafael
+5704.32	San Rafael
+1991.6	San Rafael
+1828.0	San Rafael
+2246.4	San Rafael
+5720.75	San Rafael
+2913.3	San Rafael
+1724.97	San Rafael
+1357.78	San Rafael
+2431.75	San Rafael
+3366.0	San Rafael
+2334.99	San Rafael
+3662.52	San Rafael
+6799.68	San Rafael
+3765.32	San Rafael
+5093.5	San Rafael
+5614.0	San Rafael
+2200.0	San Rafael
+2602.25	San Rafael
+2240.66	Singapore
+3551.34	Singapore
+1310.96	Singapore
+2834.65	Singapore
+1729.0	Singapore
+6034.38	Singapore
+3191.2	Singapore
+3054.57	Singapore
+2804.36	Singapore
+6539.04	Singapore
+6467.02	Singapore
+4175.6	Singapore
+3753.9	Singapore
+4509.08	Singapore
+1801.94	Singapore
+3822.92	Singapore
+4666.62	Singapore
+3379.94	Singapore
+5697.9	Singapore
+1030.44	Singapore
+4033.38	Singapore
+1499.1	Singapore
+1282.8	Singapore
+5189.78	Singapore
+2328.66	Singapore
+2830.45	Singapore
+2850.82	Singapore
+10993.5	Singapore
+7020.48	Singapore
+2419.95	Singapore
+1476.6	Singapore
+4285.46	Singapore
+2936.8	Singapore
+1753.2	Singapore
+2148.3	Singapore
+1106.93	Singapore
+1688.43	Singapore
+5938.14	Singapore
+2184.0	Singapore
+6541.2	Singapore
+2616.0	Singapore
+5285.62	Singapore
+2011.8	Singapore
+3148.88	Singapore
+2244.9	Singapore
+785.64	Singapore
+5875.2	Singapore
+3657.69	Singapore
+5911.64	Singapore
+2381.04	Singapore
+2104.0	Singapore
+3127.88	Singapore
+1340.46	Singapore
+3900.6	Singapore
+2728.0	Singapore
+4641.0	Singapore
+1033.41	Singapore
+2780.58	Singapore
+4873.26	Singapore
+3027.84	Singapore
+4100.1	Singapore
+1632.75	South Brisbane
+4197.1	South Brisbane
+4524.1	South Brisbane
+1681.35	South Brisbane
+2909.34	South Brisbane
+2802.09	South Brisbane
+3834.38	South Brisbane
+1172.6	South Brisbane
+4328.6	South Brisbane
+5288.01	South Brisbane
+3920.0	Stavern
+3394.98	Stavern
+2539.5	Stavern
+1938.89	Stavern
+3680.28	Stavern
+3403.35	Stavern
+2011.1	Stavern
+5398.26	Stavern
+2873.0	Stavern
+3224.31	Stavern
+4460.82	Stavern
+4791.82	Stavern
+2242.89	Stavern
+4228.2	Stavern
+1189.98	Stavern
+5404.62	Stavern
+845.25	Strasbourg
+2114.58	Strasbourg
+2341.71	Strasbourg
+6853.44	Strasbourg
+9048.16	Strasbourg
+2762.2	Strasbourg
+4441.5	Strasbourg
+8289.05	Strasbourg
+1681.46	Strasbourg
+2094.32	Strasbourg
+11739.7	Strasbourg
+3726.0	Strasbourg
+3787.98	Strasbourg
+2508.66	Strasbourg
+1690.9	Strasbourg
+7597.3	Strasbourg
+4509.12	Strasbourg
+2009.7	Strasbourg
+2397.45	Strasbourg
+1557.36	Torino
+4750.8	Torino
+2819.28	Torino
+2800.08	Torino
+5126.24	Torino
+8014.82	Torino
+8253.0	Torino
+3474.46	Torino
+2418.24	Torino
+4455.0	Torino
+1381.05	Torino
+8411.56	Torino
+3704.05	Torino
+2084.81	Torino
+1656.69	Torino
+577.6	Torino
+3006.43	Torino
+1574.0	Torino
+3668.6	Torino
+4946.06	Torino
+2137.05	Torino
+5239.5	Torino
+2941.89	Torino
+2954.53	Torino
+1921.92	Torino
+4242.24	Torino
+3644.75	Toulouse
+2116.16	Toulouse
+5192.64	Toulouse
+1463.0	Toulouse
+5274.72	Toulouse
+3789.72	Toulouse
+2577.6	Toulouse
+8331.61	Toulouse
+3580.88	Tsawassen
+5795.54	Tsawassen
+3540.15	Tsawassen
+3091.19	Tsawassen
+3396.44	Tsawassen
+2402.75	Tsawassen
+3245.6	Tsawassen
+2059.26	Tsawassen
+2477.23	Tsawassen
+2407.68	Tsawassen
+1449.35	Tsawassen
+2580.25	Tsawassen
+2214.67	Tsawassen
+2642.82	Tsawassen
+3159.96	Tsawassen
+5316.36	Tsawassen
+1882.8	Tsawassen
+2944.0	Tsawassen
+2992.0	Tsawassen
+1824.72	Tsawassen
+2466.7	Tsawassen
+1981.65	Tsawassen
+3372.5	Tsawassen
+4177.49	Tsawassen
+1939.3	Tsawassen
+1693.56	Tsawassen
+5759.42	Versailles
+Time taken: 39.377 seconds, Fetched: 1764 row(s)
+

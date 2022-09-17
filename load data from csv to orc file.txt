@@ -1,0 +1,25 @@
+
+hive>  from sales_order_data_csv insert overwrite table sales_order_data_orc select *;
+Query ID = root_20220916051919_5359af5f-31ac-41df-849f-70bb54963459
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1663322164302_0002, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1663322164302_0002/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1663322164302_0002
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-09-16 05:19:44,851 Stage-1 map = 0%,  reduce = 0%
+2022-09-16 05:20:09,615 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 9.78 sec
+MapReduce Total cumulative CPU time: 9 seconds 780 msec
+Ended Job = job_1663322164302_0002
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/hive_class_b1.db/sales_order_data_orc/.hive-staging_hive_2022-09-16_05-19-29_827_8403451201539035682-1/-ext-10000
+Loading data to table hive_class_b1.sales_order_data_orc
+Table hive_class_b1.sales_order_data_orc stats: [numFiles=1, numRows=3010, totalSize=44699, rawDataSize=3255711]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 9.78 sec   HDFS Read: 382263 HDFS Write: 44796 SUCCESS
+Total MapReduce CPU Time Spent: 9 seconds 780 msec
+OK
+Time taken: 44.081 seconds
+hive> select * from sales_order_data_orc;

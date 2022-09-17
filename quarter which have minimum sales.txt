@@ -1,0 +1,35 @@
+
+hive> select MIN(SALES) as minimum_sales  from sales_order_data_orc where QTR_ID IN ('1','2','3');
+Query ID = cloudera_20220916222929_67182490-e820-4dbe-ae76-702d51c4f6ac
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1663389446056_0008, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1663389446056_0008/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1663389446056_0008
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2022-09-16 22:29:42,055 Stage-1 map = 0%,  reduce = 0%
+2022-09-16 22:29:55,099 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.71 sec
+2022-09-16 22:30:10,207 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 6.09 sec
+MapReduce Total cumulative CPU time: 6 seconds 90 msec
+Ended Job = job_1663389446056_0008
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 6.09 sec   HDFS Read: 38204 HDFS Write: 6 SUCCESS
+Total MapReduce CPU Time Spent: 6 seconds 90 msec
+OK
+216.0
+
+hive>  select QTR_ID from sales_order_data_orc where MIN(SALES)='216';
+FAILED: SemanticException [Error 10128]: Line 1:47 Not yet supported place for UDAF 'MIN'
+hive>  select QTR_ID from sales_order_data_orc where minimim_sales='216';
+FAILED: SemanticException [Error 10004]: Line 1:47 Invalid table alias or column reference 'minimim_sales': (possible column names are: ordernumber, quantityordered, priceeach, orderlinenumber, sales, status, qtr_id, month_id, year_id, productline, msrp, productcode, phone, city, state, postalcode, country, territory, contactlastname, contactfirstname, dealsize)
+hive>  select QTR_ID from sales_order_data_orc where SALES='216';
+OK
+1
+Time taken: 0.217 seconds, Fetched: 1 row(s)
+hive> 

@@ -1,0 +1,2 @@
+
+hive> load data inpath 'hdfs:///benchmarks' into table sales_order_data_csv;

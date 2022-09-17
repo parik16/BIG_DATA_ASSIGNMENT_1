@@ -1,0 +1,1 @@
+[cloudera@quickstart ~]$ hdfs dfs -put /tmp/data/sales_order_data.csv /benchmarks

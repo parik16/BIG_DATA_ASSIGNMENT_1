@@ -1,0 +1,27 @@
+
+hive> select SUM(SALES) as total_sales  from sales_order_data_orc where QTR_ID='2' ;
+Query ID = cloudera_20220916220808_72f19026-c175-4cde-8e79-c17e47a62b67
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1663389446056_0003, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1663389446056_0003/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1663389446056_0003
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2022-09-16 22:08:48,953 Stage-1 map = 0%,  reduce = 0%
+2022-09-16 22:09:03,534 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.55 sec
+2022-09-16 22:09:17,379 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 5.82 sec
+MapReduce Total cumulative CPU time: 5 seconds 820 msec
+Ended Job = job_1663389446056_0003
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 5.82 sec   HDFS Read: 38652 HDFS Write: 19 SUCCESS
+Total MapReduce CPU Time Spent: 5 seconds 820 msec
+OK
+2102609.3029174805
+Time taken: 39.709 seconds, Fetched: 1 row(s)
+hive> 
